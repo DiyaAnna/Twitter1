@@ -11,7 +11,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'rails-controller-testing'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'faker',          '1.7.3'
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
@@ -45,6 +45,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+   gem 'sqlite3', '1.3.13'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -66,5 +67,4 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
